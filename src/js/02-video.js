@@ -39,7 +39,7 @@ const storage = localStorage.getItem('videoplayer-current-time');
     // const savedTime = localStorage.getItem('videoplayer-current-time');
 
     player.on(
-        'timeupdate', throttle(function () {
+        'timeupdate', _.throttle(function () {
           player.getCurrentTime()
             .then(function (seconds) {
               localStorage.setItem('videoplayer-current-time', seconds);
