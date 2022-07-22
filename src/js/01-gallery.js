@@ -20,8 +20,7 @@ function createGalleryItemMarkup(cards) {
       <img class="gallery__image" 
       src="${preview}" 
       alt="${description}"/>
-  </a>
-  `
+  </a> `
     }).join(' ');
 } 
 
