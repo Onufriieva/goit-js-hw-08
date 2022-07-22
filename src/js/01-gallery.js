@@ -14,13 +14,14 @@ console.log(link)
 function createGalleryItemMarkup(cards) {
     return cards.map(({ description, original, preview }) => {
     return `
-
-    <a class="gallery__item" 
+    <div class="gallery__item">
+    <a class="gallery__link" 
     href="${original}">
       <img class="gallery__image" 
       src="${preview}" 
       alt="${description}"/>
-  </a>`
+  </a>
+  </div>`
     }).join(' ');
 } 
 
