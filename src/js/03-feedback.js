@@ -35,6 +35,6 @@ function onInputChange () {
         textRem: textRem.value
     };
  localStorage.setItem(storageKey, JSON.stringify(inputList))
-};
+};   
 
 
